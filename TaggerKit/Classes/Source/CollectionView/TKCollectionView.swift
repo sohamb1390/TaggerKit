@@ -10,7 +10,7 @@ import UIKit
 
 /// Conforming to this protocol enables a controller to be notified and act upon
 /// the life of a tag (added or removed from a collection)
-public protocol TKCollectionViewDelegate: UIViewController {
+public protocol TKCollectionViewDelegate: class {
     func tagIsBeingAdded(name: String?)
     func tagIsBeingRemoved(name: String?)
 }
